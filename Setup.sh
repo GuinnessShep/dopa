@@ -71,7 +71,7 @@ test "$(id -u)" -eq 0 || bail "This script must be run as root."
 
 # Install essential packages.
 apt-get update
-apt-get install -y apt-utils openssh-server iptables ip6tables rsyslog logrotate curl wget nano vim sudo net-tools lsb-release less ufw software-properties-common \
+apt-get install -y apt-utils openssh-server iptables rsyslog logrotate curl wget nano vim sudo net-tools lsb-release less ufw software-properties-common \
                    gnupg2 dirmngr apt-transport-https ca-certificates debsums htop lsof man-db unzip gzip bzip2 tar rsync cron build-essential libssl-dev libffi-dev \
                    python3 python3-pip python3-venv python3-dev util-linux linux-headers-$(uname -r) cloud-init cloud-guest-utils locales mc
 
